@@ -1,7 +1,7 @@
 <script>
 	let {
-		title = "Title TK",
-		description = "Description TK",
+		title = "World Bank HCI",
+		description = "World Bank HCI",
 		url = "",
 		keywords = "",
 		preloadFont = []
