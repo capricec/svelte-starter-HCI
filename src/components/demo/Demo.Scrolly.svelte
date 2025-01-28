@@ -1,11 +1,13 @@
 <script>
 	import Scrolly from "$components/helpers/Scrolly.svelte";
+	import LineChart from "$components/demo/Demo.LineChart.svelte";
 	let value = $state();
 </script>
 
 <section id="scrolly">
 	<h2>Scrolly <span>{value || "-"}</span></h2>
 	<div class="spacer"></div>
+	<LineChart></LineChart>
 	<Scrolly bind:value>
 		{#each [0, 1, 2, 3, 4] as text, i}
 			{@const active = value === i}

@@ -3,7 +3,6 @@
 	import { shuffle } from "d3";
 	import wordmark from "$svg/wordmark-sticker.svg";
 	import linkOutArrow from "$svg/arrow-up-right.svg";
-	import Story from "$components/Footer.Story.svelte";
 
 	// custom to starter
 	const base = "https://pudding.cool";
