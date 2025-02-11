@@ -1,13 +1,6 @@
 # Svelte Starter
 
-**NOTE**: This uses Svelte 5 and is under active migration (not all features will work). For the less adventurous, use the [previous version](https://github.com/the-pudding/svelte-starter) (with Svelte 4).
-
-This [starter template](https://github.com/the-pudding/svelte-starter) aims to quickly scaffold a [SvelteKit](https://kit.svelte.dev/) project, designed around data-driven, visual stories at [The Pudding](https://pudding.cool).
-
-### Notes
-* _Do not use or reproduce The Pudding logos or fonts without written permission._
-* _Prettier Formatting: Disable any text editor Prettier extensions to take advantage of the built-in rules._
-
+**NOTE**: This uses Svelte 5
 ### Features
 
 - [Lucide Icons](https://lucide.dev/) for simple/easy svg icons
@@ -15,14 +8,6 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 - [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
 - CSV, JSON, and SVG imports
 - SSR static-hosted builds by default
-
-## Quickstart
-#### From Scratch
-* Click the green `Use this template` button above.
-* Alternatively: `npx degit the-pudding/svelte-starter my-project`
-
-#### Pre-existing Project
-* clone the repo
 
 #### Installation
 * In your local repo run `pnpm install` or `npm install`
@@ -93,54 +78,15 @@ For smaller datasets, it is often great to embed the data into the HTML file. If
 Located in `src/components`.
 
 ```js
-// Usage
-import Example from "$components/Example.svelte";
-```
-
-* `Footer.svelte`: Pudding recirculation and social links.
-* `Header.svelte`: Pudding masthead.
-
-### Helper Components
-
-Located in `src/components/helpers`.
-
-```js
-// Usage
-import Example from "$components/helpers/Example.svelte";
 ```
 
 *Available*
 * `Scrolly.svelte`: Scrollytelling.
 
-*Need to migrate*
-* `ButtonSet.svelte`: Accessible button group inputs.
-* `Chunk.svelte`: Split text into smaller dom element chunks.
-* `Countdown.svelte`: Countdown timer text.
-* `DarkModeToggle.svelte`: A toggle button for dark mode.
-* `Figure.svelte`: A barebones chart figure component to handle slots.
-* `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
-* `Range.svelte`: Customizable range slider.
-* `ShareLink.svelte`: Button to share link natively/copy to clipboard.
-* `SortTable.svelte`: Sortable semantic table with customizable props.
-* `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
-* `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
-* `Tip.svelte`: Button that links to Strip payment link.
-* `Toggle.svelte`: Accessible toggle inputs.
 
 ### Headless Components
 
 [bits UI](https://www.bits-ui.com/docs/introduction) comes pre-installed. It is recommended to use these for any UI components.
-
-### Layercake Chart Components
-
-Starter templates for various chart types to be used with [LayerCake](https://layercake.graphics/). Located in `src/components/layercake`.
-
-*Note:* You must install the module `layercake` first.
-
-```js
-// Usage
-import Example from "$components/layercake/Example.svelte";
-```
 
 ### Actions
 
@@ -158,23 +104,10 @@ import example from "$actions/action.js";
 * `inView.js`: detect when an element enters or exits the viewport.
 * `resize.js`: detect when an element is resized.
 
-### Runes
-
-These are located in `src/runes`. You can put custom ones in `src/runes/misc.js` or create unique files for more complex ones.
-
-```js
-// Usage
-import example from "$runes/example.js";
-import { example } from "$runes/misc.js";
 ```
 *Available*
 * `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
 
-*Need to migrate*
-* `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
-* `previous`: returns the previous value of another value.
-* `scrollY`: returns a number of window vertical scroll position. It is throttled using rAF for performance.
-* `timer`: returns an object `{ timer, elapsed }`. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a value that is the number of ms.
 
 ### Utils
 
